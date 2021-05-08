@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19 | Results</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5 mb-5">
+      <h3>Results of the search :</h3>
+      <section class="d-flex justify-content-center align-content-center">
+        <table class="table table-striped p-5 m-5" style="width: 60%">
+          <tr>
+            <td><h1><%= result_data.country %></h1></td>
+            <td>
+              <img
+                src="<%= image_url %>"
+                class="img-fluid"
+                height="150px"
+                width="auto"
+              />
+            </td>
+          </tr>
+          <tr>
+              <th>Total Cases</th>
+              <td><%= result_data.cases %></td>
+          </tr>
+          <tr>
+            <th>Today's Cases</th>
+            <td><%= result_data.todayCases %></td>
+        </tr>
+        <tr>
+            <th>Total Deaths</th>
+            <td><%= result_data.deaths %></td>
+        </tr>
+        <tr>
+            <th>Today's Deaths</th>
+            <td><%= result_data.todayDeaths %></td>
+        </tr>
+        <tr>
+            <th>Total Recovered</th>
+            <td><%= result_data.recovered %></td>
+        </tr>
+        <tr>
+            <th>Today's Recovered</th>
+            <td><%= result_data.todayRecovered %></td>
+        </tr>
+        <tr>
+            <th>Active</th>
+            <td><%= result_data.active %></td>
+        </tr>
+        <tr>
+            <th>Critical</th>
+            <td><%= result_data.critical %></td>
+        </tr>
+        </table>
+      </section>
+      <center><h2>Want to perform another search?&nbsp;&nbsp; <a class="btn btn-warning" href="/">Home</a></h2></center>
+    </div>
+    <!-- <center ><footer style="position: absolute; bottom: 0; margin-left: 40%;"><h3>By Karun Karthik</h3></footer></center> -->
+  </body>
+</html>
