@@ -7,6 +7,7 @@ const path = require('path');
 // import novelcovid
 const api = require('novelcovid');
 const PORT = process.env.PORT || 5000;
+require('dotenv').config();
  
 api.settings({
     baseUrl: 'https://disease.sh'
